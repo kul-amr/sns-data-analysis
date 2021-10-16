@@ -1,3 +1,7 @@
+"""
+This script loads .env file to get client_id, email and name variables
+which are used to register token.
+"""
 import os
 import dotenv
 
