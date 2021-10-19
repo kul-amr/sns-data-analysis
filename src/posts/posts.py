@@ -16,7 +16,7 @@ def get_posts():
 
         if token:
             posts_df = pd.DataFrame()
-            for page_num in range(10):
+            for page_num in range(1, 10):
                 payload = {'sl_token': token, 'page:': page_num}
                 response = requests.get(sns_posts_api, params=payload)
                 response.raise_for_status()
